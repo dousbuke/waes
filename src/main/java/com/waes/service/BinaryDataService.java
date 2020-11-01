@@ -26,7 +26,7 @@ public class BinaryDataService {
         Optional<BinaryData> record = getAllByRecordIdAndSide(id, binaryDataRequest.getSide());
 
         if(record.isPresent())
-            throw new RecordAlreadyExistException("Record already exist for side " + binaryDataRequest.getSide() + " and id" + id);
+            throw new RecordAlreadyExistException("Record already exist for side: " + binaryDataRequest.getSide() + " and id: " + id);
 
         BinaryData binaryData = BinaryData.builder()
                 .recordId(String.valueOf(id))
@@ -48,7 +48,7 @@ public class BinaryDataService {
         List<BinaryData> records = getAllByRecordId(recordId);
 
         if(records.size() == 1)
-            throw new RecordMissingException("Records for id " + recordId + " is not sufficient to calculate");
+            throw new RecordMissingException("Record is missing for id: " + recordId + " to calculate");
 
         Integer record1Size = records.get(0).getRecord().length();
         String record1Side = records.get(0).getSide();
