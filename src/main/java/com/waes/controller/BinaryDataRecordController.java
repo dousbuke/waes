@@ -25,7 +25,7 @@ public class BinaryDataRecordController {
         binaryDataRequest.setSide(Side.LEFT.name());
         binaryDataService.record(id, binaryDataRequest);
 
-        return new ResponseEntity<>(HttpStatus.ACCEPTED);
+        return new ResponseEntity<>(HttpStatus.CREATED);
     }
 
     @PostMapping("{id}/right")
@@ -33,7 +33,7 @@ public class BinaryDataRecordController {
         binaryDataRequest.setSide(Side.RIGHT.name());
         binaryDataService.record(id, binaryDataRequest);
 
-        return new ResponseEntity<>(HttpStatus.ACCEPTED);
+        return new ResponseEntity<>(HttpStatus.CREATED);
     }
 
 }
