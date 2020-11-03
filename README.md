@@ -47,6 +47,10 @@ both web layer and service layer are tested with covarage of 85% classes with 85
 
 Please check the [test-coverage](https://github.com/dousbuke/waes/blob/main/test-coverage.png)
 
+### Postman
+
+Postman collection is available here. [postman-collection](https://github.com/dousbuke/waes/blob/main/waes.postman_collection.json)
+
 
 
 
