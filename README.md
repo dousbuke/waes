@@ -18,6 +18,9 @@ mvn spring-boot:run
 
 - You can make calls to endpoints from **http://localhost:8081/v1/diff/**
 
+Once project is running you can reach API documentation via this link
+http://localhost:8081/swagger-ui.html
+
 ```
 ## Tools & Frameworks
 - Spring Framework 2.3.4
