@@ -45,6 +45,8 @@ Small application includes internal h2 database with 3 endpoints which sits on 2
 
 both web layer and service layer are tested with covarage of 85% classes with 85% lines covered. 
 
+Please check the [test-coverage](https://github.com/dousbuke/waes/blob/main/test-coverage.png)
+
 
 
 
