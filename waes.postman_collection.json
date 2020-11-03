@@ -1,0 +1,92 @@
+{
+	"info": {
+		"_postman_id": "797eb2c3-f6dd-4e01-812b-fc798fc0e218",
+		"name": "waes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Summary",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/v1/diff/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"v1",
+						"diff",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Record right",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"binaryData\": \"TWFuIGlzIGRpc3Rpbmd1aXNoZWQs4343gfgdfbfdgdfhdghdjdI=\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8081/v1/diff/2/right",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"v1",
+						"diff",
+						"2",
+						"right"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Record left",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"binaryData\": \"TWFuIGlzIGRpc3Rpbmd1aXNoZWQs4343gfgdfbfdgdfhdghdjdI=\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8081/v1/diff/2/left",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"v1",
+						"diff",
+						"2",
+						"left"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
