@@ -47,6 +47,14 @@ public class BinaryDataService {
     public BinaryDataSummaryDto getSummary(String recordId) {
         List<BinaryData> records = getAllByRecordId(recordId);
 
+        if(records.isEmpty())
+            return BinaryDataSummaryDto.builder()
+                    .leftRecordSize(0)
+                    .rightRecordSize(0)
+                    .result(null)
+                    .difference(0)
+                    .build();
+
         if(records.size() == 1)
             throw new RecordMissingException("Record is missing for id: " + recordId + " to calculate");
 
